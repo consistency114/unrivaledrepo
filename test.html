@@ -1,0 +1,39 @@
+<htmL>
+<div class="rpWrap">
+  <div class="rpGrid">
+    <a class="rpCard" href="#">
+      <img class="rpIcon" src="icon1.svg" alt="">
+      <div class="rpTitle">Olympic Patrol</div>
+      <div class="rpText">Short description goes here.</div>
+    </a>
+
+    <a class="rpCard" href="#">
+      <img class="rpIcon" src="icon2.svg" alt="">
+      <div class="rpTitle">Detective Division</div>
+      <div class="rpText">Short description goes here.</div>
+    </a>
+
+    <a class="rpCard" href="#">
+      <img class="rpIcon" src="icon3.svg" alt="">
+      <div class="rpTitle">Gang Enforcement</div>
+      <div class="rpText">Short description goes here.</div>
+    </a>
+  </div>
+</div>
+
+<style>
+  .rpWrap { max-width:1090px; margin:0 auto; }
+  .rpGrid { display:grid; gap:16px; grid-template-columns:repeat(3, 1fr); }
+  .rpCard { display:block; padding:16px; border-radius:12px; text-decoration:none; border:1px solid rgba(15,35,64,0.18); }
+  .rpIcon { width:44px; height:44px; display:block; }
+  .rpTitle { font-weight:800; letter-spacing:0.08em; text-transform:uppercase; margin-top:10px; }
+  .rpText { margin-top:8px; opacity:0.85; }
+
+  @media (max-width: 900px) {
+    .rpGrid { grid-template-columns:repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .rpGrid { grid-template-columns:1fr; }
+  }
+</style>
+</htmL>
